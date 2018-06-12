@@ -6,3 +6,7 @@ C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Help
 C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Helper\bin\Debug\Helper.pdb
 C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Helper\obj\Debug\Helper.dll
 C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Helper\obj\Debug\Helper.pdb
+C:\Desarrollos\Remesas\Helper\bin\Debug\Helper.dll
+C:\Desarrollos\Remesas\Helper\bin\Debug\Helper.pdb
+C:\Desarrollos\Remesas\Helper\obj\Debug\Helper.dll
+C:\Desarrollos\Remesas\Helper\obj\Debug\Helper.pdb

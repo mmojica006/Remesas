@@ -1,0 +1,14 @@
+C:\Desarrollos\Remesas\DAL\bin\Debug\DAL.dll.config
+C:\Desarrollos\Remesas\DAL\bin\Debug\DAL.dll
+C:\Desarrollos\Remesas\DAL\bin\Debug\DAL.pdb
+C:\Desarrollos\Remesas\DAL\bin\Debug\EntityFramework.dll
+C:\Desarrollos\Remesas\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollos\Remesas\DAL\bin\Debug\Model.dll
+C:\Desarrollos\Remesas\DAL\bin\Debug\Helper.dll
+C:\Desarrollos\Remesas\DAL\bin\Debug\Model.pdb
+C:\Desarrollos\Remesas\DAL\bin\Debug\EntityFramework.xml
+C:\Desarrollos\Remesas\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollos\Remesas\DAL\bin\Debug\Helper.pdb
+C:\Desarrollos\Remesas\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Desarrollos\Remesas\DAL\obj\Debug\DAL.dll
+C:\Desarrollos\Remesas\DAL\obj\Debug\DAL.pdb

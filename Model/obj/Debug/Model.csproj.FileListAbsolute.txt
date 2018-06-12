@@ -22,3 +22,15 @@ C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Mode
 C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Model\obj\Debug\Model.dll
 C:\Users\Seintecnicsa\Documents\Visual Studio 2015\Projects\ProyectoRemesas\Model\obj\Debug\Model.pdb
+C:\Desarrollos\Remesas\Model\bin\Debug\Model.dll.config
+C:\Desarrollos\Remesas\Model\bin\Debug\Model.dll
+C:\Desarrollos\Remesas\Model\bin\Debug\Model.pdb
+C:\Desarrollos\Remesas\Model\bin\Debug\EntityFramework.dll
+C:\Desarrollos\Remesas\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollos\Remesas\Model\bin\Debug\Helper.dll
+C:\Desarrollos\Remesas\Model\bin\Debug\Helper.pdb
+C:\Desarrollos\Remesas\Model\bin\Debug\EntityFramework.xml
+C:\Desarrollos\Remesas\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollos\Remesas\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Desarrollos\Remesas\Model\obj\Debug\Model.dll
+C:\Desarrollos\Remesas\Model\obj\Debug\Model.pdb

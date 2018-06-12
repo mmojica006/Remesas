@@ -1,1 +1,38 @@
-﻿Trabajando el formulario de Remesas
+﻿
+<div class="row">
+
+    @using (Html.BeginForm("guardar", "remesas", FormMethod.Post))
+    {
+        
+        <div class="col-md-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Carga de archivo XML WESTERN UNION</div>
+                <div class="panel-body">
+                    <form>
+
+                        <div class="form-group">
+                            <label>Archivo XML</label>
+                            <input type="file" name="fileXml" />
+                        </div>
+                        <button data-ajax="true" class="btn btn-primary">Procesar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    }
+    <div class="col-md-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">Resultado</div>
+            <div class="panel-body">
+                <p>DATA CARGADA CORRECTAMENTE</p>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+

@@ -19,16 +19,15 @@ namespace Helper
         {
             FormsAuthentication.SignOut();
         }
-        public static int GetUser()
+        public static string GetUser()
         {
-            int user_id = 0;
+            string user_id = "";
             if (HttpContext.Current.User != null && HttpContext.Current.User.Identity is FormsIdentity)
             {
                 FormsAuthenticationTicket ticket = ((FormsIdentity)HttpContext.Current.User.Identity).Ticket;
                 if (ticket != null)
                 {
-                    user_id = Convert.ToInt32(ticket.UserData);
-                }
+                    user_id = ticket.UserData;                }
             }
             return user_id;
         }
