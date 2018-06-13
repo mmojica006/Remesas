@@ -45,9 +45,10 @@ namespace Bootstrap.Areas.Admin.Controllers
 
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+        
+                rm.SetResponse(false, ex.Message );
             }
             return Json(rm);
 
