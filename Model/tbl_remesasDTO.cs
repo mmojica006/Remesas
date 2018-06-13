@@ -72,22 +72,23 @@ namespace Model
         public int AgregarRemesas(tbl_remesasDTO remesasDTO)
         {
             int result = 0;
+
             try
             {
-                //var vTipo = new SqlParameter
-                //{
-                //    ParameterName = "@vTipo",
-                //    Value = remesasDTO.Tipo,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDestinatario1 = new SqlParameter
-                //{
-                //    ParameterName = "@vDestinatario1",
-                //    Value = remesasDTO.Destinatario1,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
+                var vTipo = new SqlParameter
+                {
+                    ParameterName = "@vTipo",
+                    Value = remesasDTO.Tipo,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var vDestinatario1 = new SqlParameter
+                {
+                    ParameterName = "@vDestinatario1",
+                    Value = remesasDTO.Destinatario1 == null ? string.Empty : remesasDTO.Destinatario1,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
                 //var vDestinatario2 = new SqlParameter
                 //{
                 //    ParameterName = "@vDestinatario2",
@@ -464,65 +465,71 @@ namespace Model
                     //    );
 
 
-                   int  response = ctx.Database.ExecuteSqlCommand("exec @procResult =  uspe_reme_add @vTipo,  @vDesti1, @vDesti2, @vDesti3, @vDesti4, @vDesti5, @vDire1, @vDire2, @v_out OUTPUT",
-                new object[]
-                {
-                     new SqlParameter
-                {
-                    ParameterName = "@vTipo",
-                    Value = remesasDTO.Tipo,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                    new SqlParameter
-                {
-                    ParameterName = "@vDesti1",
-                    Value = remesasDTO.Destinatario1,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                     new SqlParameter
-                {
-                    ParameterName = "@vDesti2",
-                    Value = remesasDTO.Destinatario2,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                    new SqlParameter
-                {
-                    ParameterName = "@vDesti3",
-                    Value = remesasDTO.Destinatario3,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDesti4",
-                    Value = remesasDTO.Destinatario4,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDesti5",
-                    Value = remesasDTO.Destinatario5,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDire1",
-                    Value = remesasDTO.Direccion1,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDire2",
-                    Value = remesasDTO.Direccion2,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
+                    var response = ctx.Database.ExecuteSqlCommand("exec @procResult = uspe_reme_add  @vTipo, @vDestinatario1",
+                        new object[]
+                        {
+
+                            vTipo
+
+            ,
+                            vDestinatario1
+               ,
+                    procResult
+
+
+
+                }
+            );
+                }
+                //    new SqlParameter
+                //{
+                //    ParameterName = "@vDesti1",
+                //    Value = remesasDTO.Destinatario1,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //}
+                //     new SqlParameter
+                //{
+                //    ParameterName = "@vDesti2",
+                //    Value = remesasDTO.Destinatario2,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //},
+                //    new SqlParameter
+                //{
+                //    ParameterName = "@vDesti3",
+                //    Value = remesasDTO.Destinatario3,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //},
+                //new SqlParameter
+                //{
+                //    ParameterName = "@vDesti4",
+                //    Value = remesasDTO.Destinatario4,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //},
+                //new SqlParameter
+                //{
+                //    ParameterName = "@vDesti5",
+                //    Value = remesasDTO.Destinatario5,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //},
+                //new SqlParameter
+                //{
+                //    ParameterName = "@vDire1",
+                //    Value = remesasDTO.Direccion1,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //},
+                //new SqlParameter
+                //{
+                //    ParameterName = "@vDire2",
+                //    Value = remesasDTO.Direccion2,
+                //    SqlDbType = SqlDbType.VarChar,
+                //    Direction = ParameterDirection.Input
+                //},
 
                 //new SqlParameter
                 //{
@@ -793,25 +800,30 @@ namespace Model
                 //    SqlDbType = SqlDbType.VarChar,
                 //    Direction = ParameterDirection.Input
                 //},
-                v_out,
-                procResult
+                // new SqlParameter
+                //{
+                //    ParameterName = "@v_out",
+                //    SqlDbType = SqlDbType.Int,
+                //    Direction = ParameterDirection.Output
+                //}
 
-                 }
-
-               );
 
 
 
-                     result = (int)v_out.Value;
-                    int resp1 = (int)procResult.Value;
+                // );
 
-                }
+
+
+                //   result = (int)v_out.Value;
+                // int resp1 = (int)procResult.Value;
+
+                //}
 
             }
             catch (Exception e)
             {
                 throw;
-               
+
             }
 
             return result;
@@ -1051,7 +1063,7 @@ namespace Model
 
 
 
-                    int GuardarBD = this.AgregarRemesas(_remesas);
+                    int GuardarBD = AgregarRemesas(_remesas);
 
 
 

@@ -1,10 +1,12 @@
-﻿
+﻿@{ 
+    string usuario = "JOSLAC";
+}
 <div class="row">
 
     @using (Html.BeginForm("guardar", "remesas", FormMethod.Post))
     {
         
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">Carga de archivo XML WESTERN UNION</div>
                 <div class="panel-body">
@@ -21,7 +23,10 @@
             </div>
         </div>
     }
-    <div class="col-md-4">
+
+    <div id="list"></div>
+
+    @*<div class="col-md-4">
         <div class="panel panel-success">
             <div class="panel-heading">Resultado</div>
             <div class="panel-body">
@@ -30,9 +35,45 @@
             </div>
 
         </div>
-    </div>
+    </div>*@
 
 </div>
 
 
 
+<script>
+    $(document).ready(function () {
+        var agrid = $("#list").anexGrid({
+            columnas: [
+                { leyenda: 'MTCN', columna: 'MTCN', ordenable: true },
+                { leyenda: 'CEDULA', columna: 'NumeroID', ordenable: true },
+                { leyenda: 'USUARIO', columna: 'UsuarioCarga', ordenable: true },
+                { leyenda: 'FECHA CARGA', columna: 'FechaCarga', ordenable: true },
+                { style: 'width:60px' },
+            ],
+            modelo: [
+                {
+                    propiedad: 'Nombre', formato: function (tr, obj, valor) {
+                        return anexGrid_link({
+                            href: '@Url.Content("~/admin/experiencia/crud/")' + obj.id,
+                            contenido: valor
+                        });
+                    }
+                },
+                { propiedad: 'NumeroID' },
+                { propiedad: 'UsuarioCarga' },
+                { propiedad: 'FechaCarga' },
+          
+            ],
+            url: '@Url.Content("~/admin/remesas/listar?usuario=" + usuario)',
+            paginable: true,
+            limite: [20, 60, 100],
+            columna: 'id',
+            columna_orden: 'DESC'
+        });
+
+   
+    })
+
+
+</script>
