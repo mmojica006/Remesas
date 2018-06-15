@@ -75,7 +75,18 @@ namespace Model
 
             try
             {
+                var MTCN = new SqlParameter
+
+                {
+                    ParameterName = "@MTCN",
+                    Value = remesasDTO.Tipo,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
                 var vTipo = new SqlParameter
+
                 {
                     ParameterName = "@vTipo",
                     Value = remesasDTO.Tipo,
@@ -465,7 +476,7 @@ namespace Model
                     //    );
 
 
-                    var response = ctx.Database.ExecuteSqlCommand("exec @procResult = uspe_reme_add  @vTipo, @vDestinatario1",
+                    var response = ctx.Database.ExecuteSqlCommand("exec @procResult = USPCE_WU_PagosRemesas  @vTipo, @vDestinatario1",
                         new object[]
                         {
 
