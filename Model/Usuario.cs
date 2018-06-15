@@ -38,7 +38,7 @@ namespace Model
                         if (helper.isUserInGroup(userDN, groupDN))
                         {
                             SessionHelper.AddUserToSession(email.ToString());
-                            result.response = true;
+                            result.SetResponse(true, "Credenciales Correctas!");
 
                         }
                         else

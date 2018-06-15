@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace Bootstrap.Areas.Admin.Controllers
 {
-    //[Autenticado]
+    [Autenticado]
     public class RemesasController : Controller
     {
         private tbl_remesasDTO _remesas = new tbl_remesasDTO();
@@ -35,11 +35,12 @@ namespace Bootstrap.Areas.Admin.Controllers
         public JsonResult Guardar(HttpPostedFileBase fileXml)
         {
             var rm = new responseResult();
+            string usuarioDominio = Helper.SessionHelper.GetUser().ToString();
             try
             {
                 if (fileXml != null)
                 {
-                    rm = _remesas.GuardarFile(fileXml);
+                    rm = _remesas.GuardarFile(usuarioDominio, fileXml);
 
                     if (rm.response)
                     {

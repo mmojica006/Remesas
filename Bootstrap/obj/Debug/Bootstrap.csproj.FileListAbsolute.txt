@@ -118,6 +118,7 @@ C:\Desarrollos\Remesas\Bootstrap\bin\roslyn\VBCSCompiler.exe.config
 C:\Desarrollos\Remesas\Bootstrap\bin\Bootstrap.dll.config
 C:\Desarrollos\Remesas\Bootstrap\bin\Bootstrap.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Bootstrap.pdb
+C:\Desarrollos\Remesas\Bootstrap\bin\DAL.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Helper.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.DependencyCollector.dll
@@ -126,9 +127,11 @@ C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.ServerTelemetryChannel.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.Web.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.WindowsServer.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.ApplicationInsights.dll
+C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.Web.Infrastructure.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\Model.dll
+C:\Desarrollos\Remesas\Bootstrap\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Helpers.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Mvc.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Razor.dll
@@ -136,14 +139,15 @@ C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Webpages.Deployment.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Webpages.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Webpages.Razor.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\EntityFramework.dll
+C:\Desarrollos\Remesas\Bootstrap\bin\DAL.pdb
 C:\Desarrollos\Remesas\Bootstrap\bin\Helper.pdb
 C:\Desarrollos\Remesas\Bootstrap\bin\Model.pdb
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.DependencyCollector.xml
-C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.Web.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AI.WindowsServer.xml
-C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.ApplicationInsights.xml
+C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Desarrollos\Remesas\Bootstrap\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Razor.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Webpages.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\System.Web.Webpages.Deployment.xml
@@ -154,5 +158,5 @@ C:\Desarrollos\Remesas\Bootstrap\bin\EntityFramework.xml
 C:\Desarrollos\Remesas\Bootstrap\obj\Debug\Bootstrap.csprojResolveAssemblyReference.cache
 C:\Desarrollos\Remesas\Bootstrap\obj\Debug\Bootstrap.dll
 C:\Desarrollos\Remesas\Bootstrap\obj\Debug\Bootstrap.pdb
-C:\Desarrollos\Remesas\Bootstrap\bin\DAL.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\DAL.pdb
+C:\Desarrollos\Remesas\Bootstrap\bin\EntityFramework.SqlServer.dll
+C:\Desarrollos\Remesas\Bootstrap\bin\EntityFramework.SqlServer.xml
