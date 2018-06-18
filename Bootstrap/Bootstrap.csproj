@@ -142,6 +142,7 @@
     <Content Include="Areas\Admin\Assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Areas\Admin\Assets\images\ajax-loader.gif" />
     <Content Include="Areas\Admin\Assets\images\login.png" />
+    <Content Include="Areas\Admin\Assets\js\admin.js" />
     <Content Include="Areas\Admin\Assets\js\bootstrap.min.js" />
     <Content Include="Areas\Admin\Assets\js\ini.js" />
     <Content Include="Areas\Admin\Assets\js\jquery-ui-1.11.4.custom\external\jquery\jquery.js" />
