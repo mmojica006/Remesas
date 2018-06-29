@@ -56,18 +56,18 @@ namespace Model
         public string Operador { get; set; }
 
         public string MTCN { get; set; }
-        public decimal Monto { get; set; }
+        public string Monto { get; set; }
         public string Moneda { get; set; }
         public string Agente { get; set; }
         public string IDTerminal { get; set; }
-        public decimal ExchangeRate { get; set; }
+        public string ExchangeRate { get; set; }
         public string TestQuestion { get; set; }
         public string TestAnswer { get; set; }
         public string Mensaje { get; set; }
 
-        public decimal TasaDeCambioFD { get; set; }
+        public string TasaDeCambioFD { get; set; }
         public string MonedaOriginalTransaccionTL { get; set; }
-        public decimal MontoOriginalTransaccionTL { get; set; }
+        public string MontoOriginalTransaccionTL { get; set; }
 
         public string UsuarioCarga { get; set; }
 
@@ -329,7 +329,7 @@ namespace Model
                 var Fecha = new SqlParameter
                 {
                     ParameterName = "@Fecha",
-                    Value = remesasDTO.CiudadOrigen == null ? string.Empty : remesasDTO.CiudadOrigen,
+                    Value = remesasDTO.Fecha == null ? string.Empty : remesasDTO.Fecha,
                     SqlDbType = SqlDbType.VarChar,
                     Direction = ParameterDirection.Input
                 };
@@ -351,11 +351,14 @@ namespace Model
                 };
 
 
+
                 var Monto = new SqlParameter
                 {
                     ParameterName = "@Monto",
-                    Value = Convert.ToString(remesasDTO.Monto) == null ? 0 : remesasDTO.Monto,
-                    SqlDbType = SqlDbType.Decimal,
+                    Value = remesasDTO.Monto == null ? string.Empty : remesasDTO.Monto,
+                   // Precision=15,
+                   // Scale=2,
+                    SqlDbType = SqlDbType.VarChar,
                     Direction = ParameterDirection.Input
                 };
 
@@ -385,7 +388,7 @@ namespace Model
                 var ExchangeRate = new SqlParameter
                 {
                     ParameterName = "@ExchangeRate",
-                    Value = Convert.ToString(remesasDTO.ExchangeRate) == null ? 0 : remesasDTO.ExchangeRate,
+                    Value = remesasDTO.ExchangeRate == null ? string.Empty : remesasDTO.ExchangeRate,
                     SqlDbType = SqlDbType.VarChar,
                     Direction = ParameterDirection.Input
                 };
@@ -415,7 +418,7 @@ namespace Model
                 var TasaDeCambioFD = new SqlParameter
                 {
                     ParameterName = "@TasaDeCambioFD",
-                    Value = Convert.ToString(remesasDTO.TasaDeCambioFD) == null ? 0 : remesasDTO.TasaDeCambioFD,
+                    Value =remesasDTO.TasaDeCambioFD == null ? string.Empty : remesasDTO.TasaDeCambioFD,
                     SqlDbType = SqlDbType.VarChar,
                     Direction = ParameterDirection.Input
                 };
@@ -430,8 +433,8 @@ namespace Model
                 var MontoOriginalTransaccionTL = new SqlParameter
                 {
                     ParameterName = "@MontoOriginalTransaccionTL",
-                    Value = Convert.ToString(remesasDTO.MontoOriginalTransaccionTL) == null ? 0 : remesasDTO.MontoOriginalTransaccionTL,
-                    SqlDbType = SqlDbType.Float,
+                    Value = remesasDTO.MontoOriginalTransaccionTL == null ? string.Empty : remesasDTO.MontoOriginalTransaccionTL,
+                    SqlDbType = SqlDbType.VarChar,
                     Direction = ParameterDirection.Input
                 };
 
@@ -711,7 +714,8 @@ namespace Model
                                 break;
                             case "Monto":
 
-                                _remesas.Monto = Convert.ToDecimal(reader.ReadString());
+                                _remesas.Monto = reader.ReadString();
+                  
                                 break;
                             case "Moneda":
 
@@ -727,7 +731,7 @@ namespace Model
                                 break;
                             case "ExchangeRate":
 
-                                _remesas.ExchangeRate = Convert.ToDecimal(reader.ReadString());
+                                _remesas.ExchangeRate = reader.ReadString();
                                 break;
                             case "TestQuestion":
 
@@ -743,7 +747,7 @@ namespace Model
                                 break;
                             case "TasaDeCambioFD":
 
-                                _remesas.TasaDeCambioFD = Convert.ToDecimal(reader.ReadString());
+                                _remesas.TasaDeCambioFD = reader.ReadString();
                                 break;
                             case "MonedaOriginalTransaccionTL":
 
@@ -751,7 +755,7 @@ namespace Model
                                 break;
                             case "MontoOriginalTransaccionTL":
 
-                                _remesas.MontoOriginalTransaccionTL = Convert.ToDecimal(reader.ReadString());
+                                _remesas.MontoOriginalTransaccionTL = reader.ReadString();
                                 break;
 
                         }

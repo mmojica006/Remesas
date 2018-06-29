@@ -1,7 +1,4 @@
-﻿@{ 
-    string usuario = "JOSLAC";
-}
-<div class="row">
+﻿<div class="row">
 
     @using (Html.BeginForm("guardar", "remesas", FormMethod.Post))
     {
@@ -10,23 +7,19 @@
             <div class="panel panel-primary">
     <div class="panel-heading">Carga de archivo XML WESTERN UNION</div>
     <div class="panel-body">
-        <form>
-
-
+        <form>            
 
             @*<div class="form-group">
                     <label>Archivo XML</label>
-
                         <input id="fileopen" type="file" name="fileXml"  />
+                     </div>*@ 
 
-                </div>*@ 
-
-
-            <div class="fileUpload	fa fa-upload btn btn-info ">
-                <span>Seleccionar</span>
-                <input id="fileopen"  name="fileXml" type="file" class="upload" />
+           
+            <input id="uploadFile" placeholder="Seleccione un archivo XML" disabled="disabled" />
+            <div class="fileUpload	 btn btn-info  ">
+                <span>Subir archivo</span>
+                <input id="fileopen" name="fileXml" type="file" class="upload" />
             </div>
-            <input id="uploadFile" placeholder="Subir archivo XML" disabled="disabled" />
 
     <br>
             <br>
