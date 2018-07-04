@@ -15,6 +15,7 @@ namespace Bootstrap.Areas.Admin.Controllers
     public class RemesasController : Controller
     {
         private tbl_remesasDTO _remesas = new tbl_remesasDTO();
+        private WU_TablaDato wu_tabladato = new WU_TablaDato();
         private WU_Apos wu_apos = new WU_Apos();
            
 
@@ -35,12 +36,14 @@ namespace Bootstrap.Areas.Admin.Controllers
         public JsonResult Guardar(HttpPostedFileBase fileXml)
         {
             var rm = new responseResult();
+            var CantCaracter = wu_tabladato.Obtener("caracteres",1);
+            int CantMTCN = Convert.ToInt32(CantCaracter.Valor);
             string usuarioDominio = Helper.SessionHelper.GetUser().ToString();
             try
             {
                 if (fileXml != null)
                 {
-                    rm = _remesas.GuardarFile(usuarioDominio, fileXml);
+                    rm = _remesas.GuardarFile(usuarioDominio, fileXml, CantMTCN);
 
                     if (rm.response)
                     {

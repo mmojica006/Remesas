@@ -61,6 +61,7 @@
     <Compile Include="Usuario.cs" />
     <Compile Include="WU_Apos.cs" />
     <Compile Include="WU_Auditoria.cs" />
+    <Compile Include="WU_TablaDato.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

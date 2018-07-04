@@ -539,7 +539,7 @@ namespace Model
 
         }
 
-        public responseResult GuardarFile(string usuario, HttpPostedFileBase fileXml)
+        public responseResult GuardarFile(string usuario, HttpPostedFileBase fileXml, int CantidadMTCN)
         {
             var rm = new responseResult();
             tbl_remesasDTO _remesas = new tbl_remesasDTO();
@@ -709,8 +709,17 @@ namespace Model
                                 _remesas.Operador = reader.ReadString();
                                 break;
                             case "MTCN":
-
-                                _remesas.MTCN = reader.ReadString();
+                               
+                                _remesas.MTCN = reader.ReadString();                          
+                                
+                                if (  _remesas.MTCN.Length < CantidadMTCN)
+                                {
+                                    string strMTCN = _remesas.MTCN;
+                                    int xmlcount = _remesas.MTCN.Length;
+                                    int dif = Math.Abs(CantidadMTCN - xmlcount);
+                                    string newValueMTCN = strMTCN.PadLeft(strMTCN.Length + dif, '0');                                  
+                                    _remesas.MTCN = newValueMTCN;
+                                }                          
                                 break;
                             case "Monto":
 
