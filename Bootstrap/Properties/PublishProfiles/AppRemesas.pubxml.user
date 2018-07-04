@@ -208,16 +208,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/15/2018 13:49:37</publishTime>
     </File>
     <File Include="bin/Bootstrap.dll">
-      <publishTime>06/22/2018 14:23:08</publishTime>
+      <publishTime>07/04/2018 11:20:59</publishTime>
     </File>
     <File Include="bin/Bootstrap.pdb">
-      <publishTime>06/22/2018 14:23:08</publishTime>
+      <publishTime>07/04/2018 11:20:59</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>06/22/2018 14:23:03</publishTime>
+      <publishTime>07/04/2018 11:20:55</publishTime>
     </File>
     <File Include="bin/DAL.pdb">
-      <publishTime>06/22/2018 14:23:03</publishTime>
+      <publishTime>07/04/2018 11:20:55</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>09/11/2013 09:10:04</publishTime>
@@ -226,10 +226,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/11/2013 09:10:04</publishTime>
     </File>
     <File Include="bin/Helper.dll">
-      <publishTime>06/22/2018 14:23:02</publishTime>
+      <publishTime>07/04/2018 11:20:54</publishTime>
     </File>
     <File Include="bin/Helper.pdb">
-      <publishTime>06/22/2018 14:23:02</publishTime>
+      <publishTime>07/04/2018 11:20:54</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>06/27/2017 12:59:34</publishTime>
@@ -262,10 +262,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/23/2012 15:23:58</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>06/22/2018 14:23:02</publishTime>
+      <publishTime>07/04/2018 11:20:55</publishTime>
     </File>
     <File Include="bin/Model.pdb">
-      <publishTime>06/22/2018 14:23:02</publishTime>
+      <publishTime>07/04/2018 11:20:55</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/18/2015 20:19:46</publishTime>
@@ -334,7 +334,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/11/2018 08:27:42</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/22/2018 14:24:01</publishTime>
+      <publishTime>07/04/2018 11:21:32</publishTime>
     </File>
   </ItemGroup>
 </Project>
