@@ -60,9 +60,7 @@ namespace Bootstrap.Areas.Admin.Controllers
                 rm.SetResponse(false, ex.Message );
             }
             return Json(rm);
-
-
-
+            
 
         }
 
