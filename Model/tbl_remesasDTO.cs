@@ -69,370 +69,387 @@ namespace Model
         public string MonedaOriginalTransaccionTL { get; set; }
         public string MontoOriginalTransaccionTL { get; set; }
 
+        public string UsuarioCarga { get; set; }
+
         public int AgregarRemesas(tbl_remesasDTO remesasDTO)
         {
             int result = 0;
+
             try
             {
-                //var vTipo = new SqlParameter
-                //{
-                //    ParameterName = "@vTipo",
-                //    Value = remesasDTO.Tipo,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDestinatario1 = new SqlParameter
-                //{
-                //    ParameterName = "@vDestinatario1",
-                //    Value = remesasDTO.Destinatario1,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDestinatario2 = new SqlParameter
-                //{
-                //    ParameterName = "@vDestinatario2",
-                //    Value = remesasDTO.Destinatario2,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDestinatario3 = new SqlParameter
-                //{
-                //    ParameterName = "@vDestinatario3",
-                //    Value = remesasDTO.Destinatario3,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDestinatario4 = new SqlParameter
-                //{
-                //    ParameterName = "@vDestinatario4",
-                //    Value = remesasDTO.Destinatario4,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDestinatario5 = new SqlParameter
-                //{
-                //    ParameterName = "@vDestinatario5",
-                //    Value = remesasDTO.Destinatario5,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDireccion1 = new SqlParameter
-                //{
-                //    ParameterName = "@vDireccion1",
-                //    Value = remesasDTO.Direccion1,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vDireccion2 = new SqlParameter
-                //{
-                //    ParameterName = "@vDireccion2",
-                //    Value = remesasDTO.Direccion2,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vEstadoBeneficiario = new SqlParameter
-                //{
-                //    ParameterName = "@vEstadoBeneficiario",
-                //    Value = remesasDTO.EstadoBeneficiario,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vCiudadBeneficiario = new SqlParameter
-                //{
-                //    ParameterName = "@vCiudadBeneficiario",
-                //    Value = remesasDTO.CiudadBeneficiario,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vTelefono = new SqlParameter
-                //{
-                //    ParameterName = "@vTelefono",
-                //    Value = remesasDTO.Telefono,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vIdentificacion = new SqlParameter
-                //{
-                //    ParameterName = "@vIdentificacion",
-                //    Value = remesasDTO.Identificacion,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vNumeroID = new SqlParameter
-                //{
-                //    ParameterName = "@vNumeroID",
-                //    Value = remesasDTO.NumeroID,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vEmitidaPor = new SqlParameter
-                //{
-                //    ParameterName = "@vEmitidaPor",
-                //    Value = remesasDTO.EmitidaPor,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
+                var MTCN = new SqlParameter
 
-
-
-                //var vFechaEmision = new SqlParameter
-                //{
-                //    ParameterName = "@vFechaEmision",
-                //    Value = remesasDTO.FechaEmision,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vFechaExpiracion = new SqlParameter
-                //{
-                //    ParameterName = "@vFechaExpiracion",
-                //    Value = remesasDTO.FechaExpiracion,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vFechaNacimiento = new SqlParameter
-                //{
-                //    ParameterName = "@vFechaNacimiento",
-                //    Value = remesasDTO.FechaNacimiento,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vOcupacion = new SqlParameter
-                //{
-                //    ParameterName = "@vOcupacion",
-                //    Value = remesasDTO.EmitidaPor,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vNacionalidad = new SqlParameter
-                //{
-                //    ParameterName = "@vNacionalidad",
-                //    Value = remesasDTO.Nacionalidad,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vTrabajo = new SqlParameter
-                //{
-                //    ParameterName = "@vTrabajo",
-                //    Value = remesasDTO.Trabajo,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vSexo = new SqlParameter
-                //{
-                //    ParameterName = "@vSexo",
-                //    Value = remesasDTO.Sexo,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-
-                //var vEstadoCivil = new SqlParameter
-                //{
-                //    ParameterName = "@vEstadoCivil",
-                //    Value = remesasDTO.EstadoCivil,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vWUCard = new SqlParameter
-                //{
-                //    ParameterName = "@vWUCard",
-                //    Value = remesasDTO.WUCard,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vRemitente1 = new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente1",
-                //    Value = remesasDTO.Remitente1,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vRemitente2 = new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente2",
-                //    Value = remesasDTO.Remitente2,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vRemitente3 = new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente3",
-                //    Value = remesasDTO.Remitente3,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vRemitente4 = new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente4",
-                //    Value = remesasDTO.Remitente4,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vRemitente5 = new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente5",
-                //    Value = remesasDTO.Remitente5,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-
-                //var vOrigen = new SqlParameter
-                //{
-                //    ParameterName = "@vOrigen",
-                //    Value = remesasDTO.Origen,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-
-                //var vEstadoOrigen = new SqlParameter
-                //{
-                //    ParameterName = "@vEstadoOrigen",
-                //    Value = remesasDTO.EstadoOrigen,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-
-                //var vCiudadOrigen = new SqlParameter
-                //{
-                //    ParameterName = "@vCiudadOrigen",
-                //    Value = remesasDTO.CiudadOrigen,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-
-                //var vFecha = new SqlParameter
-                //{
-                //    ParameterName = "@vFecha",
-                //    Value = remesasDTO.Fecha,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vHora = new SqlParameter
-                //{
-                //    ParameterName = "@vHora",
-                //    Value = remesasDTO.Hora,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vOperador = new SqlParameter
-                //{
-                //    ParameterName = "@vOperador",
-                //    Value = remesasDTO.Operador,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vMTCN = new SqlParameter
-                //{
-                //    ParameterName = "@vMTCN",
-                //    Value = remesasDTO.MTCN,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vMonto = new SqlParameter
-                //{
-                //    ParameterName = "@vMonto",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vMoneda = new SqlParameter
-                //{
-                //    ParameterName = "@vMoneda",
-                //    Value = remesasDTO.Moneda,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vAgente = new SqlParameter
-                //{
-                //    ParameterName = "@vAgente",
-                //    Value = remesasDTO.Agente,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vIDTerminal = new SqlParameter
-                //{
-                //    ParameterName = "@vIDTerminal",
-                //    Value = remesasDTO.IDTerminal,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vExchangeRate = new SqlParameter
-                //{
-                //    ParameterName = "@vExchangeRate",
-                //    Value = remesasDTO.ExchangeRate,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vTestQuestion = new SqlParameter
-                //{
-                //    ParameterName = "@vTestQuestion",
-                //    Value = remesasDTO.TestQuestion,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vTestAnswer = new SqlParameter
-                //{
-                //    ParameterName = "@vTestAnswer",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vMensaje = new SqlParameter
-                //{
-                //    ParameterName = "@vMensaje",
-                //    Value = remesasDTO.Mensaje,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vTasaDeCambioFD = new SqlParameter
-                //{
-                //    ParameterName = "@vTasaDeCambioFD",
-                //    Value = remesasDTO.TasaDeCambioFD,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-                //var vMonedaOriginalTransaccionTL = new SqlParameter
-                //{
-                //    ParameterName = "@vMonedaOriginalTransaccionTL",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-                //var vMontoOriginalTransaccionTL = new SqlParameter
-                //{
-                //    ParameterName = "@vMontoOriginalTransaccionTL",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //};
-
-
-
-                var v_out = new SqlParameter
                 {
-                    ParameterName = "@v_out",
+                    ParameterName = "@MTCN",
+                    Value = remesasDTO.MTCN,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var Tipo = new SqlParameter
+
+                {
+                    ParameterName = "@Tipo",
+                    Value = remesasDTO.Tipo,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Destinatario1 = new SqlParameter
+                {
+                    ParameterName = "@Destinatario1",
+                    Value = remesasDTO.Destinatario1 == null ? string.Empty : remesasDTO.Destinatario1,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Destinatario2 = new SqlParameter
+                {
+                    ParameterName = "@Destinatario2",
+                    Value = remesasDTO.Destinatario2 == null ? string.Empty : remesasDTO.Destinatario2,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Destinatario3 = new SqlParameter
+                {
+                    ParameterName = "@Destinatario3",
+                    Value = remesasDTO.Destinatario3 == null ? string.Empty : remesasDTO.Destinatario3,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Destinatario4 = new SqlParameter
+                {
+                    ParameterName = "@Destinatario4",
+                    Value = remesasDTO.Destinatario4 == null ? string.Empty : remesasDTO.Destinatario4,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Destinatario5 = new SqlParameter
+                {
+                    ParameterName = "@Destinatario5",
+                    Value = remesasDTO.Destinatario5 == null ? string.Empty : remesasDTO.Destinatario5,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Direccion1 = new SqlParameter
+                {
+                    ParameterName = "@Direccion1",
+                    Value = remesasDTO.Direccion1 == null ? string.Empty : remesasDTO.Direccion1,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Direccion2 = new SqlParameter
+                {
+                    ParameterName = "@Direccion2",
+                    Value = remesasDTO.Direccion2 == null ? string.Empty : remesasDTO.Direccion2,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var EstadoBeneficiario = new SqlParameter
+                {
+                    ParameterName = "@EstadoBeneficiario",
+                    Value = remesasDTO.EstadoBeneficiario == null ? string.Empty : remesasDTO.EstadoBeneficiario,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var CiudadBeneficiario = new SqlParameter
+                {
+                    ParameterName = "@CiudadBeneficiario",
+                    Value = remesasDTO.CiudadBeneficiario == null ? string.Empty : remesasDTO.CiudadBeneficiario,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Telefono = new SqlParameter
+                {
+                    ParameterName = "@Telefono",
+                    Value = remesasDTO.Telefono == null ? string.Empty : remesasDTO.Telefono,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Identificacion = new SqlParameter
+                {
+                    ParameterName = "@Identificacion",
+                    Value = remesasDTO.Identificacion == null ? string.Empty : remesasDTO.Identificacion,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var NumeroID = new SqlParameter
+                {
+                    ParameterName = "@NumeroID",
+                    Value = remesasDTO.NumeroID == null ? string.Empty : remesasDTO.NumeroID,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var EmitidaPor = new SqlParameter
+                {
+                    ParameterName = "@EmitidaPor",
+                    Value = remesasDTO.EmitidaPor == null ? string.Empty : remesasDTO.EmitidaPor,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+
+                var FechaEmision = new SqlParameter
+                {
+                    ParameterName = "@FechaEmision",
+                    Value = remesasDTO.FechaEmision == null ? string.Empty : remesasDTO.FechaEmision,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var FechaExpiracion = new SqlParameter
+                {
+                    ParameterName = "@FechaExpiracion",
+                    Value = remesasDTO.FechaExpiracion == null ? string.Empty : remesasDTO.FechaExpiracion,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var FechaNacimiento = new SqlParameter
+                {
+                    ParameterName = "@FechaNacimiento",
+                    Value = remesasDTO.FechaNacimiento == null ? string.Empty : remesasDTO.FechaNacimiento,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Ocupacion = new SqlParameter
+                {
+                    ParameterName = "@Ocupacion",
+                    Value = remesasDTO.Ocupacion == null ? string.Empty : remesasDTO.Ocupacion,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Nacionalidad = new SqlParameter
+                {
+                    ParameterName = "@Nacionalidad",
+                    Value = remesasDTO.Nacionalidad == null ? string.Empty : remesasDTO.Nacionalidad,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Trabajo = new SqlParameter
+                {
+                    ParameterName = "@Trabajo",
+                    Value = remesasDTO.Trabajo == null ? string.Empty : remesasDTO.Trabajo,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Sexo = new SqlParameter
+                {
+                    ParameterName = "@Sexo",
+                    Value = remesasDTO.Sexo == null ? string.Empty : remesasDTO.Sexo,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var EstadoCivil = new SqlParameter
+                {
+                    ParameterName = "@EstadoCivil",
+                    Value = remesasDTO.EstadoCivil == null ? string.Empty : remesasDTO.EstadoCivil,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var WUCard = new SqlParameter
+                {
+                    ParameterName = "@WUCard",
+                    Value = remesasDTO.WUCard == null ? string.Empty : remesasDTO.WUCard,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Remitente1 = new SqlParameter
+                {
+                    ParameterName = "@Remitente1",
+                    Value = remesasDTO.Remitente1 == null ? string.Empty : remesasDTO.Remitente1,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Remitente2 = new SqlParameter
+                {
+                    ParameterName = "@Remitente2",
+                    Value = remesasDTO.Remitente2 == null ? string.Empty : remesasDTO.Remitente2,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Remitente3 = new SqlParameter
+                {
+                    ParameterName = "@Remitente3",
+                    Value = remesasDTO.Remitente3 == null ? string.Empty : remesasDTO.Remitente3,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Remitente4 = new SqlParameter
+                {
+                    ParameterName = "@Remitente4",
+                    Value = remesasDTO.Remitente4 == null ? string.Empty : remesasDTO.Remitente4,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var Remitente5 = new SqlParameter
+                {
+                    ParameterName = "@Remitente5",
+                    Value = remesasDTO.Remitente5 == null ? string.Empty : remesasDTO.Remitente5,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var Origen = new SqlParameter
+                {
+                    ParameterName = "@Origen",
+                    Value = remesasDTO.Origen == null ? string.Empty : remesasDTO.Origen,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var EstadoOrigen = new SqlParameter
+                {
+                    ParameterName = "@EstadoOrigen",
+                    Value = remesasDTO.EstadoOrigen == null ? string.Empty : remesasDTO.EstadoOrigen,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var CiudadOrigen = new SqlParameter
+                {
+                    ParameterName = "@CiudadOrigen",
+                    Value = remesasDTO.CiudadOrigen == null ? string.Empty : remesasDTO.CiudadOrigen,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var Fecha = new SqlParameter
+                {
+                    ParameterName = "@Fecha",
+                    Value = remesasDTO.Fecha == null ? string.Empty : remesasDTO.Fecha,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Hora = new SqlParameter
+                {
+                    ParameterName = "@Hora",
+                    Value = remesasDTO.Hora == null ? string.Empty : remesasDTO.Hora,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Operador = new SqlParameter
+                {
+                    ParameterName = "@Operador",
+                    Value = remesasDTO.Operador == null ? string.Empty : remesasDTO.Operador,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+
+                var Monto = new SqlParameter
+                {
+                    ParameterName = "@Monto",
+                    Value = remesasDTO.Monto == null ? string.Empty : remesasDTO.Monto,
+                   // Precision=15,
+                   // Scale=2,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Moneda = new SqlParameter
+                {
+                    ParameterName = "@Moneda",
+                    Value = remesasDTO.Moneda == null ? string.Empty : remesasDTO.Moneda,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Agente = new SqlParameter
+                {
+                    ParameterName = "@Agente",
+                    Value = remesasDTO.Agente == null ? string.Empty : remesasDTO.Agente,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var IDTerminal = new SqlParameter
+                {
+                    ParameterName = "@IDTerminal",
+                    Value = remesasDTO.IDTerminal == null ? string.Empty : remesasDTO.IDTerminal,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var ExchangeRate = new SqlParameter
+                {
+                    ParameterName = "@ExchangeRate",
+                    Value = remesasDTO.ExchangeRate == null ? string.Empty : remesasDTO.ExchangeRate,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var TestQuestion = new SqlParameter
+                {
+                    ParameterName = "@TestQuestion",
+                    Value = remesasDTO.TestQuestion == null ? string.Empty : remesasDTO.TestQuestion,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var TestAnswer = new SqlParameter
+                {
+                    ParameterName = "@TestAnswer",
+                    Value = remesasDTO.TestAnswer == null ? string.Empty : remesasDTO.TestAnswer,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var Mensaje = new SqlParameter
+                {
+                    ParameterName = "@Mensaje",
+                    Value = remesasDTO.Mensaje == null ? string.Empty : remesasDTO.Mensaje,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var TasaDeCambioFD = new SqlParameter
+                {
+                    ParameterName = "@TasaDeCambioFD",
+                    Value =remesasDTO.TasaDeCambioFD == null ? string.Empty : remesasDTO.TasaDeCambioFD,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var MonedaOriginalTransaccionTL = new SqlParameter
+                {
+                    ParameterName = "@MonedaOriginalTransaccionTL",
+                    Value = remesasDTO.MonedaOriginalTransaccionTL == null ? string.Empty : remesasDTO.MonedaOriginalTransaccionTL,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+                var MontoOriginalTransaccionTL = new SqlParameter
+                {
+                    ParameterName = "@MontoOriginalTransaccionTL",
+                    Value = remesasDTO.MontoOriginalTransaccionTL == null ? string.Empty : remesasDTO.MontoOriginalTransaccionTL,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+                var UsuarioCarga = new SqlParameter
+                {
+                    ParameterName = "@UsuarioCarga",
+                    Value = remesasDTO.UsuarioCarga == null ? string.Empty : remesasDTO.UsuarioCarga,
+                    SqlDbType = SqlDbType.VarChar,
+                    Direction = ParameterDirection.Input
+                };
+
+
+                var Salida = new SqlParameter
+                {
+                    ParameterName = "@Salida",
                     SqlDbType = SqlDbType.Int,
                     Direction = ParameterDirection.Output
 
@@ -448,370 +465,28 @@ namespace Model
                 using (var ctx = new dbContext())
                 {
 
-                    //response = ctx.Database.ExecuteSqlCommand("exec @procResult =  uspe_reme_add @vTipo, @vDestinatario1,@vDestinatario2,@vDestinatario3,@vDestinatario4,@vDestinatario5,@vDireccion1,@vDireccion2," +
-                    //    " @vEstadoBeneficiario, @vCiudadBeneficiario,@vTelefono, @vIdentificacion,@vNumeroID, @vEmitidaPor, @vFechaEmision,@vFechaExpiracion, @vFechaNacimiento, @vOcupacion,@vNacionalidad," +
-                    //    " @vTrabajo, @vSexo, @vEstadoCivil, @vWUCard,@vRemitente1, @vRemitente2,@vRemitente3,@vRemitente4,@vRemitente5,@vOrigen,@vEstadoOrigen,@vCiudadOrigen,@vFecha,@vHora,@vOperador,@vMTCN," +
-                    //    " @vMonto, @vMoneda,@vAgente,@vIDTerminal, @vExchangeRate,@vTestQuestion,@vTestAnswer, @vMensaje,@vTasaDeCambioFD,@vMonedaOriginalTransaccionTL, @vMontoOriginalTransaccionTL,@v_out OUTPUT",
-                    //     new object[]
-                    //     {
-                    //     vTipo, vDestinatario1, vDestinatario2,vDestinatario3,vDestinatario4,vDestinatario5,vDireccion1,vDireccion2,vEstadoBeneficiario,vCiudadBeneficiario,vTelefono,vIdentificacion,vNumeroID,vEmitidaPor,
-                    //    vFechaEmision,vFechaExpiracion,vFechaNacimiento,vOcupacion,vNacionalidad,vTrabajo,vSexo,vEstadoCivil,vWUCard,vRemitente1,vRemitente2,vRemitente3,vRemitente4,vRemitente5,vOrigen,vEstadoOrigen,vCiudadOrigen,vFecha,vHora,
-                    //    vOperador,vMTCN,vMonto,vMoneda,vAgente,vIDTerminal,vExchangeRate,vTestQuestion,vTestAnswer,vMensaje,vTasaDeCambioFD,vMonedaOriginalTransaccionTL,vMontoOriginalTransaccionTL
-                    //    ,
-                    //     v_out,procResult
-                    //    }
+                    var response = ctx.Database.ExecuteSqlCommand("exec @procResult = USPCE_WU_PagosRemesas  @MTCN,@Tipo,@Destinatario1,@Destinatario2,@Destinatario3,@Destinatario4,@Destinatario5,@Direccion1,@Direccion2,@EstadoBeneficiario,@CiudadBeneficiario,@Telefono,@Identificacion,@NumeroID,@EmitidaPor,@FechaEmision,@FechaExpiracion,@FechaNacimiento,@Ocupacion,@Nacionalidad,@Trabajo,@Sexo,@EstadoCivil,@WUCard,@Remitente1,@Remitente2,@Remitente3,@Remitente4,@Remitente5,@Origen,@EstadoOrigen,@CiudadOrigen,@Fecha,@Hora,@Operador,@Monto,@Moneda,@Agente,@IDTerminal,@ExchangeRate,@TestQuestion,@TestAnswer,@Mensaje,@TasaDeCambioFD,@MonedaOriginalTransaccionTL,@MontoOriginalTransaccionTL,@UsuarioCarga,@Salida OUTPUT",
+                        new object[]
+                       {MTCN,Tipo,Destinatario1,Destinatario2,Destinatario3,Destinatario4,Destinatario5,Direccion1,Direccion2,EstadoBeneficiario,CiudadBeneficiario,Telefono,Identificacion,NumeroID,EmitidaPor,FechaEmision,FechaExpiracion,FechaNacimiento,Ocupacion,Nacionalidad,Trabajo,Sexo,EstadoCivil,WUCard,Remitente1,Remitente2,Remitente3,Remitente4,Remitente5,Origen,EstadoOrigen,CiudadOrigen,Fecha,Hora,Operador,Monto,Moneda,Agente,IDTerminal,ExchangeRate,TestQuestion,TestAnswer,Mensaje,TasaDeCambioFD,MonedaOriginalTransaccionTL,MontoOriginalTransaccionTL,UsuarioCarga,Salida,procResult
 
-                    //    );
-
-
-                   int  response = ctx.Database.ExecuteSqlCommand("exec @procResult =  uspe_reme_add @vTipo,  @vDesti1, @vDesti2, @vDesti3, @vDesti4, @vDesti5, @vDire1, @vDire2, @v_out OUTPUT",
-                new object[]
-                {
-                     new SqlParameter
-                {
-                    ParameterName = "@vTipo",
-                    Value = remesasDTO.Tipo,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                    new SqlParameter
-                {
-                    ParameterName = "@vDesti1",
-                    Value = remesasDTO.Destinatario1,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                     new SqlParameter
-                {
-                    ParameterName = "@vDesti2",
-                    Value = remesasDTO.Destinatario2,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                    new SqlParameter
-                {
-                    ParameterName = "@vDesti3",
-                    Value = remesasDTO.Destinatario3,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDesti4",
-                    Value = remesasDTO.Destinatario4,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDesti5",
-                    Value = remesasDTO.Destinatario5,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDire1",
-                    Value = remesasDTO.Direccion1,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-                new SqlParameter
-                {
-                    ParameterName = "@vDire2",
-                    Value = remesasDTO.Direccion2,
-                    SqlDbType = SqlDbType.VarChar,
-                    Direction = ParameterDirection.Input
-                },
-
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vEstadoBeneficiario",
-                //    Value = remesasDTO.EstadoBeneficiario,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vCiudadBeneficiario",
-                //    Value = remesasDTO.CiudadBeneficiario,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vTelefono",
-                //    Value = remesasDTO.Telefono,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vIdentificacion",
-                //    Value = remesasDTO.Identificacion,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vNumeroID",
-                //    Value = remesasDTO.NumeroID,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vEmitidaPor",
-                //    Value = remesasDTO.EmitidaPor,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vFechaEmision",
-                //    Value = remesasDTO.FechaEmision,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vFechaExpiracion",
-                //    Value = remesasDTO.FechaExpiracion,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vFechaNacimiento",
-                //    Value = remesasDTO.FechaNacimiento,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vOcupacion",
-                //    Value = remesasDTO.EmitidaPor,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vNacionalidad",
-                //    Value = remesasDTO.Nacionalidad,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vTrabajo",
-                //    Value = remesasDTO.Trabajo,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vSexo",
-                //    Value = remesasDTO.Sexo,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vEstadoCivil",
-                //    Value = remesasDTO.EstadoCivil,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vWUCard",
-                //    Value = remesasDTO.WUCard,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente1",
-                //    Value = remesasDTO.Remitente1,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente2",
-                //    Value = remesasDTO.Remitente2,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente3",
-                //    Value = remesasDTO.Remitente3,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente4",
-                //    Value = remesasDTO.Remitente4,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vRemitente5",
-                //    Value = remesasDTO.Remitente5,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vOrigen",
-                //    Value = remesasDTO.Origen,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vEstadoOrigen",
-                //    Value = remesasDTO.EstadoOrigen,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vCiudadOrigen",
-                //    Value = remesasDTO.CiudadOrigen,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vFecha",
-                //    Value = remesasDTO.Fecha,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vHora",
-                //    Value = remesasDTO.Hora,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vOperador",
-                //    Value = remesasDTO.Operador,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vMTCN",
-                //    Value = remesasDTO.MTCN,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vMonto",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vMoneda",
-                //    Value = remesasDTO.Moneda,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vAgente",
-                //    Value = remesasDTO.Agente,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vIDTerminal",
-                //    Value = remesasDTO.IDTerminal,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vExchangeRate",
-                //    Value = remesasDTO.ExchangeRate,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vTestQuestion",
-                //    Value = remesasDTO.TestQuestion,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vTestAnswer",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vMensaje",
-                //    Value = remesasDTO.Mensaje,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vTasaDeCambioFD",
-                //    Value = remesasDTO.TasaDeCambioFD,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vMonedaOriginalTransaccionTL",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                //new SqlParameter
-                //{
-                //    ParameterName = "@vMontoOriginalTransaccionTL",
-                //    Value = remesasDTO.Monto,
-                //    SqlDbType = SqlDbType.VarChar,
-                //    Direction = ParameterDirection.Input
-                //},
-                v_out,
-                procResult
-
-                 }
-
-               );
+                        }
+            );
+                    int res0 = (int)Salida.Value;
+                    result = res0;
 
 
 
-                     result = (int)v_out.Value;
-                    int resp1 = (int)procResult.Value;
 
+
+                    int resp = (int)procResult.Value;
                 }
+
 
             }
             catch (Exception e)
             {
                 throw;
-               
+
             }
 
             return result;
@@ -819,10 +494,56 @@ namespace Model
 
         }
 
-        public responseResult GuardarFile(HttpPostedFileBase fileXml)
+        public string ObtenerUsuarioTopaz(string usuario)
+        {
+            string response = string.Empty;
+            try
+            {
+                using (var ctx = new dbContext())
+                {
+                    string resp = ctx.Database.SqlQuery<string>("select isnull(INICIALES,'') from USUARIOS where LDAPUSER='" + usuario + "'").FirstOrDefault();
+
+                    if (resp != "")
+                        response = resp;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return response;
+        }
+
+        public string ObtenerMensaje(int id)
+        {
+            string response = string.Empty;
+            try
+            {
+                using (var ctx = new dbContext())
+                {
+                    string resp = ctx.Database.SqlQuery<string>("select isnull(Descripcion,'') from WU_EstadosCargaRem where Codigo=" + id).FirstOrDefault();
+
+                    if (resp != "")
+                        response = resp;
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
+
+            return response;
+
+        }
+
+        public responseResult GuardarFile(string usuario, HttpPostedFileBase fileXml, int CantidadMTCN)
         {
             var rm = new responseResult();
             tbl_remesasDTO _remesas = new tbl_remesasDTO();
+            _remesas.UsuarioCarga = ObtenerUsuarioTopaz(usuario.ToLower());
             // string Domain = HttpContext.Current.Request.Url.Authority;
 
 
@@ -831,7 +552,7 @@ namespace Model
             {
                 if (fileXml != null)
                 {
-                    string archivo = DateTime.Now.ToString("yyyyMMddHHmmss") + Path.GetExtension(fileXml.FileName);
+                    string archivo = usuario + DateTime.Now.ToString("yyyyMMddHHmmss") + Path.GetExtension(fileXml.FileName);
                     fileXml.SaveAs(HttpContext.Current.Server.MapPath("~/upload/" + archivo));
 
                     string path = HttpContext.Current.Server.MapPath("~/upload/" + archivo);
@@ -843,220 +564,224 @@ namespace Model
 
                     while (reader.Read())
                     {
-                        string sValue;
 
-                        if (reader.NodeType.Equals(XmlNodeType.Element))
+
+                        switch (reader.Name.ToString())
+
                         {
 
+                            case "Tipo":
+                                _remesas.Tipo = reader.ReadString();
+                                break;
 
+                            case "Destinatario1":
+                                _remesas.Destinatario1 = reader.ReadString();
+                                break;
 
-                            switch (reader.Name)
-                            {
-                                case "Tipo":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Tipo = sValue;
+                            case "Destinatario2":
 
-                                    break;
-                                case "Destinatario1":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Destinatario1 = sValue;
-                                    break;
-                                case "Destinatario2":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Destinatario2 = sValue;
-                                    break;
-                                case "Destinatario3":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Destinatario3 = sValue;
-                                    break;
-                                case "Destinatario4":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Destinatario4 = sValue;
-                                    break;
-                                case "Destinatario5":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Destinatario5 = sValue;
-                                    break;
-                                case "Direccion1":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Direccion1 = sValue;
-                                    break;
-                                case "Direccion2":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Direccion2 = sValue;
-                                    break;
-                                case "EstadoBeneficiario":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.EstadoBeneficiario = sValue;
-                                    break;
-                                case "CiudadBeneficiario":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.CiudadBeneficiario = sValue;
-                                    break;
-                                case "Telefono":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Telefono = sValue;
-                                    break;
-                                case "Identificacion":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Identificacion = sValue;
-                                    break;
-                                case "NumeroID":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.NumeroID = sValue;
-                                    break;
-                                case "EmitidaPor":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.EmitidaPor = sValue;
-                                    break;
-                                case "FechaEmision":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.FechaEmision = sValue;
-                                    break;
-                                case "FechaExpiracion":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.FechaExpiracion = sValue;
-                                    break;
-                                case "FechaNacimiento":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.FechaNacimiento = sValue;
-                                    break;
-                                case "Ocupacion":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Ocupacion = sValue;
-                                    break;
-                                case "Nacionalidad":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Nacionalidad = sValue;
-                                    break;
-                                case "Trabajo":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Trabajo = sValue;
-                                    break;
-                                case "Sexo":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Sexo = sValue;
-                                    break;
-                                case "EstadoCivil":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.EstadoCivil = sValue;
-                                    break;
-                                case "WUCard":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.WUCard = sValue;
-                                    break;
-                                case "Remitente1":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Remitente1 = sValue;
-                                    break;
-                                case "Remitente2":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Remitente2 = sValue;
-                                    break;
-                                case "Remitente3":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Remitente3 = sValue;
-                                    break;
-                                case "Remitente4":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Remitente4 = sValue;
-                                    break;
-                                case "Remitente5":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Remitente5 = sValue;
-                                    break;
-                                case "Origen":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Origen = sValue;
-                                    break;
+                                _remesas.Destinatario2 = reader.ReadString();
+                                break;
+                            case "Destinatario3":
 
-                                case "EstadoOrigen":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.EstadoOrigen = sValue;
-                                    break;
+                                _remesas.Destinatario3 = reader.ReadString();
+                                break;
+                            case "Destinatario4":
 
-                                case "CiudadOrigen":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.CiudadOrigen = sValue;
-                                    break;
-                                case "Fecha":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Fecha = sValue;
-                                    break;
-                                case "Hora":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Hora = sValue;
-                                    break;
-                                case "Operador":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Operador = sValue;
-                                    break;
-                                case "MTCN":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.MTCN = sValue;
-                                    break;
-                                case "Monto":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Monto = sValue;
-                                    break;
-                                case "Moneda":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Moneda = sValue;
-                                    break;
-                                case "Agente":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Agente = sValue;
-                                    break;
-                                case "IDTerminal":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.IDTerminal = sValue;
-                                    break;
-                                case "ExchangeRate":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.ExchangeRate = sValue;
-                                    break;
-                                case "TestQuestion":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.TestQuestion = sValue;
-                                    break;
-                                case "TestAnswer":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.TestAnswer = sValue;
-                                    break;
-                                case "Mensaje":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.Mensaje = sValue;
-                                    break;
-                                case "TasaDeCambioFD":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.TasaDeCambioFD = sValue;
-                                    break;
-                                case "MonedaOriginalTransaccionTL":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.MonedaOriginalTransaccionTL = sValue;
-                                    break;
-                                case "MontoOriginalTransaccionTL":
-                                    sValue = reader.ReadElementString();
-                                    _remesas.MontoOriginalTransaccionTL = sValue;
-                                    break;
+                                _remesas.Destinatario4 = reader.ReadString();
+                                break;
+                            case "Destinatario5":
 
-                            }
+                                _remesas.Destinatario5 = reader.ReadString();
+                                break;
+                            case "Direccion1":
 
+                                _remesas.Direccion1 = reader.ReadString();
+                                break;
+                            case "Direccion2":
 
-                            //Console.WriteLine(reader.LocalName);
+                                _remesas.Direccion2 = reader.ReadString();
+                                break;
+                            case "EstadoBeneficiario":
 
+                                _remesas.EstadoBeneficiario = reader.ReadString();
+                                break;
+                            case "CiudadBeneficiario":
+
+                                _remesas.CiudadBeneficiario = reader.ReadString();
+                                break;
+                            case "Telefono":
+
+                                _remesas.Telefono = reader.ReadString();
+                                break;
+                            case "Identificacion":
+
+                                _remesas.Identificacion = reader.ReadString();
+                                break;
+                            case "NumeroID":
+
+                                _remesas.NumeroID = reader.ReadString();
+                                break;
+                            case "EmitidaPor":
+
+                                _remesas.EmitidaPor = reader.ReadString();
+                                break;
+                            case "FechaEmision":
+
+                                _remesas.FechaEmision = reader.ReadString();
+                                break;
+                            case "FechaExpiracion":
+
+                                _remesas.FechaExpiracion = reader.ReadString();
+                                break;
+                            case "FechaNacimiento":
+
+                                _remesas.FechaNacimiento = reader.ReadString();
+                                break;
+                            case "Ocupacion":
+
+                                _remesas.Ocupacion = reader.ReadString();
+                                break;
+                            case "Nacionalidad":
+
+                                _remesas.Nacionalidad = reader.ReadString();
+                                break;
+                            case "Trabajo":
+
+                                _remesas.Trabajo = reader.ReadString();
+                                break;
+                            case "Sexo":
+
+                                _remesas.Sexo = reader.ReadString();
+                                break;
+                            case "EstadoCivil":
+
+                                _remesas.EstadoCivil = reader.ReadString();
+                                break;
+                            case "WUCard":
+
+                                _remesas.WUCard = reader.ReadString();
+                                break;
+                            case "Remitente1":
+
+                                _remesas.Remitente1 = reader.ReadString();
+                                break;
+                            case "Remitente2":
+
+                                _remesas.Remitente2 = reader.ReadString();
+                                break;
+                            case "Remitente3":
+
+                                _remesas.Remitente3 = reader.ReadString();
+                                break;
+                            case "Remitente4":
+
+                                _remesas.Remitente4 = reader.ReadString();
+                                break;
+                            case "Remitente5":
+
+                                _remesas.Remitente5 = reader.ReadString();
+                                break;
+                            case "Origen":
+
+                                _remesas.Origen = reader.ReadString();
+                                break;
+
+                            case "EstadoOrigen":
+
+                                _remesas.EstadoOrigen = reader.ReadString();
+                                break;
+
+                            case "CiudadOrigen":
+
+                                _remesas.CiudadOrigen = reader.ReadString();
+                                break;
+                            case "Fecha":
+
+                                _remesas.Fecha = reader.ReadString();
+                                break;
+                            case "Hora":
+
+                                _remesas.Hora = reader.ReadString();
+                                break;
+                            case "Operador":
+
+                                _remesas.Operador = reader.ReadString();
+                                break;
+                            case "MTCN":
+                               
+                                _remesas.MTCN = reader.ReadString();                          
+                                
+                                if (  _remesas.MTCN.Length < CantidadMTCN)
+                                {
+                                    string strMTCN = _remesas.MTCN;
+                                    int xmlcount = _remesas.MTCN.Length;
+                                    int dif = Math.Abs(CantidadMTCN - xmlcount);
+                                    string newValueMTCN = strMTCN.PadLeft(strMTCN.Length + dif, '0');                                  
+                                    _remesas.MTCN = newValueMTCN;
+                                }                          
+                                break;
+                            case "Monto":
+
+                                _remesas.Monto = reader.ReadString();
+                  
+                                break;
+                            case "Moneda":
+
+                                _remesas.Moneda = reader.ReadString();
+                                break;
+                            case "Agente":
+
+                                _remesas.Agente = reader.ReadString();
+                                break;
+                            case "IDTerminal":
+
+                                _remesas.IDTerminal = reader.ReadString();
+                                break;
+                            case "ExchangeRate":
+
+                                _remesas.ExchangeRate = reader.ReadString();
+                                break;
+                            case "TestQuestion":
+
+                                _remesas.TestQuestion = reader.ReadString();
+                                break;
+                            case "TestAnswer":
+
+                                _remesas.TestAnswer = reader.ReadString();
+                                break;
+                            case "Mensaje":
+
+                                _remesas.Mensaje = reader.ReadString();
+                                break;
+                            case "TasaDeCambioFD":
+
+                                _remesas.TasaDeCambioFD = reader.ReadString();
+                                break;
+                            case "MonedaOriginalTransaccionTL":
+
+                                _remesas.MonedaOriginalTransaccionTL = reader.ReadString();
+                                break;
+                            case "MontoOriginalTransaccionTL":
+
+                                _remesas.MontoOriginalTransaccionTL = reader.ReadString();
+                                break;
 
                         }
+
+
+
+
+
                     } //End While
 
 
 
-                    int GuardarBD = this.AgregarRemesas(_remesas);
+                    int GuardarBD = AgregarRemesas(_remesas);
 
+                    ObtenerMensaje(GuardarBD);
 
-
-
-                    rm.SetResponse(true, "Archivo cargado correctamente!");
+                    rm.SetResponse(true, ObtenerMensaje(GuardarBD));
                 }
                 else
                 {

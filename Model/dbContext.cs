@@ -13,6 +13,8 @@ namespace Model
         }
 
         public virtual DbSet<WU_Auditoria> WU_Auditoria { get; set; }
+        public virtual DbSet<WU_Apos> WU_Apos { get; set; }
+        public virtual DbSet<WU_TablaDato> WU_TablaDato { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

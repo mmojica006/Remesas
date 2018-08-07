@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Model</RootNamespace>
     <AssemblyName>Model</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,12 +53,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnexGRID.cs" />
     <Compile Include="dbContext.cs" />
     <Compile Include="Procedure\uspe_reme_setxml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tbl_remesasDTO.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="WU_Apos.cs" />
     <Compile Include="WU_Auditoria.cs" />
+    <Compile Include="WU_TablaDato.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
