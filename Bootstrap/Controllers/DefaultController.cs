@@ -13,7 +13,7 @@ namespace Bootstrap.Controllers
         // GET: Default
         public ActionResult Index()
         {
-            return View();
+            return Redirect("Admin/Remesas");
         }
     }
 }
