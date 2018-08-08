@@ -89,6 +89,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.0\lib\net45\System.Diagnostics.DiagnosticSource.dll</HintPath>
@@ -181,6 +182,8 @@
     <Content Include="Global.asax" />
     <Content Include="Areas\Admin\Views\Shared\Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Remesas\Index.cshtml" />
+    <Content Include="Reports\AppReportViewerPage.aspx" />
+    <Content Include="Reports\frm_reporte.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -192,10 +195,29 @@
     <Compile Include="Areas\Admin\Controllers\ReportesController.cs" />
     <Compile Include="Areas\Admin\Filters\AdminFilters.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="DT_USPE_WU_VOUCHER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DT_USPE_WU_VOUCHER.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AppReportViewerPage.aspx.cs">
+      <DependentUpon>AppReportViewerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AppReportViewerPage.aspx.designer.cs">
+      <DependentUpon>AppReportViewerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_reporte.aspx.cs">
+      <DependentUpon>frm_reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_reporte.aspx.designer.cs">
+      <DependentUpon>frm_reporte.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -221,6 +243,17 @@
     <Content Include="Areas\Admin\Views\Reportes\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="DT_USPE_WU_VOUCHER.xsc">
+      <DependentUpon>DT_USPE_WU_VOUCHER.xsd</DependentUpon>
+    </Content>
+    <None Include="DT_USPE_WU_VOUCHER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DT_USPE_WU_VOUCHER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DT_USPE_WU_VOUCHER.xss">
+      <DependentUpon>DT_USPE_WU_VOUCHER.xsd</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\AppRemesas.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -250,6 +283,12 @@
       <Project>{a397c9c1-1237-4f2c-9767-ddd8e4663c2d}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\rptGeneraRemesas.rdlc" />
+    <EmbeddedResource Include="Reports\rpt_voucher_carta.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,5 @@
 ﻿using Helper;
+using Model.Procedure;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -797,6 +798,23 @@ namespace Model
 
             return rm;
 
+
+        }
+
+       public List<USPE_WU_VOUCHER> listadoRemesas()
+        {
+
+            try
+            {
+                using (var ctx = new dbContext())
+                {
+                    return ctx.Database.SqlQuery<USPE_WU_VOUCHER>("USPE_WU_VOUCHER").ToList();
+                }
+
+            } catch (Exception ex)
+            {
+                throw;
+            }
 
         }
 

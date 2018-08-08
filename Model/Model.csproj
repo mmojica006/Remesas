@@ -56,6 +56,7 @@
     <Compile Include="AnexGRID.cs" />
     <Compile Include="dbContext.cs" />
     <Compile Include="Procedure\uspe_reme_setxml.cs" />
+    <Compile Include="Procedure\USPE_WU_VOUCHER.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tbl_remesasDTO.cs" />
     <Compile Include="Usuario.cs" />
