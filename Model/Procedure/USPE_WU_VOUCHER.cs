@@ -28,7 +28,7 @@ namespace Model.Procedure
         public string MTCN { get; set; }
 
 
-        public decimal CARGO_ENVIO { get; set; }
+        public string CARGO_ENVIO { get; set; }
         public string CARGO_MENSAJE { get; set; }
         public string CARGO_ENTREGA { get; set; }
         public string IMPUESTO { get; set; }
