@@ -162,16 +162,5 @@ C:\Desarrollos\Remesas\Bootstrap\bin\EntityFramework.SqlServer.dll
 C:\Desarrollos\Remesas\Bootstrap\bin\EntityFramework.SqlServer.xml
 C:\Desarrollos\Remesas\Bootstrap\bin\Reports\rpt_voucher_carta.rdlc
 C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.ReportViewer.WebForms.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\Microsoft.SqlServer.Types.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\de\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\es\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\fr\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\it\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\ja\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\ko\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\pt\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\ru\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
-C:\Desarrollos\Remesas\Bootstrap\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Desarrollos\Remesas\Bootstrap\obj\Debug\RdlCompile.cache
 C:\Desarrollos\Remesas\Bootstrap\obj\Debug\RdlCompile.compiled

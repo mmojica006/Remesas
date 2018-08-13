@@ -801,14 +801,16 @@ namespace Model
 
         }
 
-       public List<USPE_WU_VOUCHER> listadoRemesas()
+       public List<USPE_WU_VOUCHER> listadoRemesas(DateTime fechaInicio, DateTime fechaFin)
         {
 
             try
             {
                 using (var ctx = new dbContext())
                 {
-                    return ctx.Database.SqlQuery<USPE_WU_VOUCHER>("USPE_WU_VOUCHER").ToList();
+                    object[] parameters = { fechaInicio, fechaFin };
+
+                    return ctx.Database.SqlQuery<USPE_WU_VOUCHER>("USPE_WU_VOUCHER {0},{1}", parameters).ToList();
                 }
 
             } catch (Exception ex)

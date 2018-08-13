@@ -6,7 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>8.4158cm</Width>
+              <Width>8.32761cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -708,7 +708,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox29</rd:DefaultName>
                           <Top>11.86187cm</Top>
-                          <Left>1.40166cm</Left>
+                          <Left>2.03666cm</Left>
                           <Height>0.47653cm</Height>
                           <Width>1.38939cm</Width>
                           <ZIndex>21</ZIndex>
@@ -742,7 +742,7 @@
                           </Paragraphs>
                           <rd:DefaultName>MTCN</rd:DefaultName>
                           <Top>11.86187cm</Top>
-                          <Left>2.66285cm</Left>
+                          <Left>3.29785cm</Left>
                           <Height>0.47653cm</Height>
                           <Width>3.50542cm</Width>
                           <ZIndex>22</ZIndex>
@@ -777,7 +777,7 @@
                           </Paragraphs>
                           <rd:DefaultName>MONEDA_ORINGEN</rd:DefaultName>
                           <Top>12.47951cm</Top>
-                          <Left>0.68052cm</Left>
+                          <Left>1.31552cm</Left>
                           <Height>0.50022cm</Height>
                           <Width>5.37104cm</Width>
                           <ZIndex>23</ZIndex>
@@ -1003,9 +1003,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox29</rd:DefaultName>
                           <Top>17.81719cm</Top>
-                          <Left>0.03528cm</Left>
+                          <Left>0.98778cm</Left>
                           <Height>1.39375cm</Height>
-                          <Width>8.3276cm</Width>
+                          <Width>6.01628cm</Width>
                           <ZIndex>30</ZIndex>
                           <Style>
                             <Border>
@@ -1211,7 +1211,7 @@
                           <Top>5.24924cm</Top>
                           <Left>6.17299cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>2.09368cm</Width>
+                          <Width>2.15462cm</Width>
                           <ZIndex>36</ZIndex>
                           <Style>
                             <Border>
@@ -1277,7 +1277,7 @@
                           <Top>7.50785cm</Top>
                           <Left>5.48917cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>2.84725cm</Width>
+                          <Width>2.48975cm</Width>
                           <ZIndex>38</ZIndex>
                           <Style>
                             <Border>
@@ -1309,7 +1309,7 @@
                           <Top>8.10257cm</Top>
                           <Left>1.87792cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>6.4585cm</Width>
+                          <Width>6.06163cm</Width>
                           <ZIndex>39</ZIndex>
                           <Style>
                             <Border>
@@ -1373,7 +1373,7 @@
                           <Top>8.91424cm</Top>
                           <Left>6.45459cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>1.9612cm</Width>
+                          <Width>1.06162cm</Width>
                           <ZIndex>41</ZIndex>
                           <Style>
                             <Border>
@@ -1398,14 +1398,16 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>SOURCE_AMOUNT</rd:DefaultName>
                           <Top>9.63632cm</Top>
                           <Left>2.55702cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>5.70965cm</Width>
+                          <Width>1.75916cm</Width>
                           <ZIndex>42</ZIndex>
                           <Style>
                             <Border>
@@ -1437,7 +1439,7 @@
                           <Top>10.41271cm</Top>
                           <Left>2.55702cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>5.70965cm</Width>
+                          <Width>5.38253cm</Width>
                           <ZIndex>43</ZIndex>
                           <Style>
                             <Border>
@@ -1469,7 +1471,7 @@
                           <Top>11.15382cm</Top>
                           <Left>2.55702cm</Left>
                           <Height>0.44125cm</Height>
-                          <Width>2.88805cm</Width>
+                          <Width>4.42263cm</Width>
                           <ZIndex>44</ZIndex>
                           <Style>
                             <Border>
@@ -1502,7 +1504,7 @@
                           </Paragraphs>
                           <rd:DefaultName>PAY_AMOUNT1</rd:DefaultName>
                           <Top>13.23494cm</Top>
-                          <Left>4.64455cm</Left>
+                          <Left>4.00955cm</Left>
                           <Height>0.44125cm</Height>
                           <Width>3.62212cm</Width>
                           <ZIndex>45</ZIndex>
@@ -1537,7 +1539,7 @@
                           </Paragraphs>
                           <rd:DefaultName>CARGO_ENVIO</rd:DefaultName>
                           <Top>14.01133cm</Top>
-                          <Left>4.64455cm</Left>
+                          <Left>4.00955cm</Left>
                           <Height>0.44125cm</Height>
                           <Width>3.62212cm</Width>
                           <ZIndex>46</ZIndex>
@@ -1572,7 +1574,7 @@
                           </Paragraphs>
                           <rd:DefaultName>CARGO_MENSAJE</rd:DefaultName>
                           <Top>14.78772cm</Top>
-                          <Left>4.64455cm</Left>
+                          <Left>4.00955cm</Left>
                           <Height>0.44125cm</Height>
                           <Width>3.62212cm</Width>
                           <ZIndex>47</ZIndex>
@@ -1607,7 +1609,7 @@
                           </Paragraphs>
                           <rd:DefaultName>CARGO_ENTREGA</rd:DefaultName>
                           <Top>15.56411cm</Top>
-                          <Left>4.68393cm</Left>
+                          <Left>4.04893cm</Left>
                           <Height>0.44125cm</Height>
                           <Width>3.58275cm</Width>
                           <ZIndex>48</ZIndex>
@@ -1642,7 +1644,7 @@
                           </Paragraphs>
                           <rd:DefaultName>IMPUESTO</rd:DefaultName>
                           <Top>16.3405cm</Top>
-                          <Left>4.68393cm</Left>
+                          <Left>4.04893cm</Left>
                           <Height>0.44125cm</Height>
                           <Width>3.58275cm</Width>
                           <ZIndex>49</ZIndex>
@@ -1677,7 +1679,7 @@
                           </Paragraphs>
                           <rd:DefaultName>TOTAL</rd:DefaultName>
                           <Top>17.11688cm</Top>
-                          <Left>4.68393cm</Left>
+                          <Left>4.04893cm</Left>
                           <Height>0.44125cm</Height>
                           <Width>3.58275cm</Width>
                           <ZIndex>50</ZIndex>
@@ -1697,9 +1699,9 @@
                           <MIMEType>image/jpeg</MIMEType>
                           <Sizing>FitProportional</Sizing>
                           <Top>19.31677cm</Top>
-                          <Left>0.07465cm</Left>
+                          <Left>0.98778cm</Left>
                           <Height>1.65875cm</Height>
-                          <Width>8.26177cm</Width>
+                          <Width>6.01628cm</Width>
                           <ZIndex>51</ZIndex>
                           <Style>
                             <Border>
@@ -1775,7 +1777,7 @@
         <DataSetName>DS_COMPLETA</DataSetName>
         <Top>0.28787cm</Top>
         <Height>21.17958cm</Height>
-        <Width>8.4158cm</Width>
+        <Width>8.32761cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1786,13 +1788,13 @@
     <Height>8.5638in</Height>
     <Style />
   </Body>
-  <Width>3.35801in</Width>
+  <Width>3.66357in</Width>
   <Page>
-    <PageWidth>3.25in</PageWidth>
-    <LeftMargin>0.7874in</LeftMargin>
-    <RightMargin>0.7874in</RightMargin>
-    <TopMargin>0.7874in</TopMargin>
-    <BottomMargin>0.7874in</BottomMargin>
+    <PageHeight>10in</PageHeight>
+    <PageWidth>4in</PageWidth>
+    <RightMargin>0.25in</RightMargin>
+    <TopMargin>0.25in</TopMargin>
+    <BottomMargin>0.75in</BottomMargin>
     <ColumnSpacing>0.05118in</ColumnSpacing>
     <Style />
   </Page>

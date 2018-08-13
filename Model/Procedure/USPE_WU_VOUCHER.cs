@@ -21,7 +21,7 @@ namespace Model.Procedure
         public string DESTINO { get; set; }
         public string ORIGEN { get; set; }
         public decimal PAY_AMOUNT { get; set; }
-        public decimal EXCHANGE_RATE { get; set; }
+        public int EXCHANGE_RATE { get; set; }
         public decimal SOURCE_AMOUNT { get; set; }
         public string MONEDA_ORINGEN { get; set; }
         public DateTime FECHA_ORIGEN { get; set; }

@@ -17,23 +17,28 @@ namespace Bootstrap.Reports
         {
             var id = int.Parse(Request.QueryString["id"]);
             var tipo = byte.Parse(Request.QueryString["tipo"]);
+            var fInicio = Request.QueryString["f1"];
+            var fFin = Request.QueryString["f2"];
 
             if (!IsPostBack)
             {
-                ImprimirOrden(id, tipo);
+                ImprimirOrden(id, tipo, fInicio, fFin);
             }
 
 
         }
 
-        private void ImprimirOrden(int id, byte tipo)
+        private void ImprimirOrden(int id, byte tipo,string fechaInicio, string fechaFin)
         {
-          
+            //string fechaInicio = "01/06/2018";
+            //string fechaFin = "30/06/2018";
 
+               
 
 
             ReportViewer1.LocalReport.DataSources.Clear();
-            ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DS_COMPLETA", _tbl_remesasDto.listadoRemesas()));
+            ReportViewer1.LocalReport.DataSources.Add(
+                new ReportDataSource("DS_COMPLETA", _tbl_remesasDto.listadoRemesas( DateTime.Parse(fechaInicio), DateTime.Parse(fechaFin))));
             switch (tipo)
             {
                 case 1:
