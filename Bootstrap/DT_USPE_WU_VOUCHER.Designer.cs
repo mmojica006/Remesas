@@ -329,6 +329,16 @@ namespace Bootstrap {
             
             private global::System.Data.DataColumn columnEstadoRemesa;
             
+            private global::System.Data.DataColumn columnEXCHANGE_RATE1;
+            
+            private global::System.Data.DataColumn columnCARGO_ENVIO1;
+            
+            private global::System.Data.DataColumn columnCARGO_MENSAJE1;
+            
+            private global::System.Data.DataColumn columnCARGO_ENTREGA1;
+            
+            private global::System.Data.DataColumn columnIMPUESTO1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public USPE_WU_VOUCHERDataTable() {
@@ -564,6 +574,46 @@ namespace Bootstrap {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EXCHANGE_RATE1Column {
+                get {
+                    return this.columnEXCHANGE_RATE1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CARGO_ENVIO1Column {
+                get {
+                    return this.columnCARGO_ENVIO1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CARGO_MENSAJE1Column {
+                get {
+                    return this.columnCARGO_MENSAJE1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CARGO_ENTREGA1Column {
+                get {
+                    return this.columnCARGO_ENTREGA1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IMPUESTO1Column {
+                get {
+                    return this.columnIMPUESTO1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -624,7 +674,12 @@ namespace Bootstrap {
                         int IMPUESTO, 
                         decimal TOTAL, 
                         string FIRMA, 
-                        string EstadoRemesa) {
+                        string EstadoRemesa, 
+                        int EXCHANGE_RATE1, 
+                        string CARGO_ENVIO1, 
+                        string CARGO_MENSAJE1, 
+                        string CARGO_ENTREGA1, 
+                        string IMPUESTO1) {
                 USPE_WU_VOUCHERRow rowUSPE_WU_VOUCHERRow = ((USPE_WU_VOUCHERRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         AGENCIA,
@@ -651,7 +706,12 @@ namespace Bootstrap {
                         IMPUESTO,
                         TOTAL,
                         FIRMA,
-                        EstadoRemesa};
+                        EstadoRemesa,
+                        EXCHANGE_RATE1,
+                        CARGO_ENVIO1,
+                        CARGO_MENSAJE1,
+                        CARGO_ENTREGA1,
+                        IMPUESTO1};
                 rowUSPE_WU_VOUCHERRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUSPE_WU_VOUCHERRow);
                 return rowUSPE_WU_VOUCHERRow;
@@ -706,6 +766,11 @@ namespace Bootstrap {
                 this.columnTOTAL = base.Columns["TOTAL"];
                 this.columnFIRMA = base.Columns["FIRMA"];
                 this.columnEstadoRemesa = base.Columns["EstadoRemesa"];
+                this.columnEXCHANGE_RATE1 = base.Columns["EXCHANGE_RATE1"];
+                this.columnCARGO_ENVIO1 = base.Columns["CARGO_ENVIO1"];
+                this.columnCARGO_MENSAJE1 = base.Columns["CARGO_MENSAJE1"];
+                this.columnCARGO_ENTREGA1 = base.Columns["CARGO_ENTREGA1"];
+                this.columnIMPUESTO1 = base.Columns["IMPUESTO1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -761,6 +826,16 @@ namespace Bootstrap {
                 base.Columns.Add(this.columnFIRMA);
                 this.columnEstadoRemesa = new global::System.Data.DataColumn("EstadoRemesa", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEstadoRemesa);
+                this.columnEXCHANGE_RATE1 = new global::System.Data.DataColumn("EXCHANGE_RATE1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEXCHANGE_RATE1);
+                this.columnCARGO_ENVIO1 = new global::System.Data.DataColumn("CARGO_ENVIO1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCARGO_ENVIO1);
+                this.columnCARGO_MENSAJE1 = new global::System.Data.DataColumn("CARGO_MENSAJE1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCARGO_MENSAJE1);
+                this.columnCARGO_ENTREGA1 = new global::System.Data.DataColumn("CARGO_ENTREGA1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCARGO_ENTREGA1);
+                this.columnIMPUESTO1 = new global::System.Data.DataColumn("IMPUESTO1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIMPUESTO1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnMTCN}, true));
                 this.columnAGENCIA.ReadOnly = true;
@@ -796,6 +871,20 @@ namespace Bootstrap {
                 this.columnFIRMA.MaxLength = 2147483647;
                 this.columnEstadoRemesa.ReadOnly = true;
                 this.columnEstadoRemesa.MaxLength = 30;
+                this.columnEXCHANGE_RATE1.ReadOnly = true;
+                this.columnEXCHANGE_RATE1.Caption = "EXCHANGE_RATE";
+                this.columnCARGO_ENVIO1.ReadOnly = true;
+                this.columnCARGO_ENVIO1.Caption = "CARGO_ENVIO";
+                this.columnCARGO_ENVIO1.MaxLength = 1;
+                this.columnCARGO_MENSAJE1.ReadOnly = true;
+                this.columnCARGO_MENSAJE1.Caption = "CARGO_MENSAJE";
+                this.columnCARGO_MENSAJE1.MaxLength = 1;
+                this.columnCARGO_ENTREGA1.ReadOnly = true;
+                this.columnCARGO_ENTREGA1.Caption = "CARGO_ENTREGA";
+                this.columnCARGO_ENTREGA1.MaxLength = 1;
+                this.columnIMPUESTO1.ReadOnly = true;
+                this.columnIMPUESTO1.Caption = "IMPUESTO";
+                this.columnIMPUESTO1.MaxLength = 1;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1328,6 +1417,86 @@ namespace Bootstrap {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int EXCHANGE_RATE1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableUSPE_WU_VOUCHER.EXCHANGE_RATE1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EXCHANGE_RATE1\' in table \'USPE_WU_VOUCHER\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSPE_WU_VOUCHER.EXCHANGE_RATE1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CARGO_ENVIO1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableUSPE_WU_VOUCHER.CARGO_ENVIO1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CARGO_ENVIO1\' in table \'USPE_WU_VOUCHER\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSPE_WU_VOUCHER.CARGO_ENVIO1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CARGO_MENSAJE1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableUSPE_WU_VOUCHER.CARGO_MENSAJE1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CARGO_MENSAJE1\' in table \'USPE_WU_VOUCHER\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSPE_WU_VOUCHER.CARGO_MENSAJE1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CARGO_ENTREGA1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableUSPE_WU_VOUCHER.CARGO_ENTREGA1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CARGO_ENTREGA1\' in table \'USPE_WU_VOUCHER\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSPE_WU_VOUCHER.CARGO_ENTREGA1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string IMPUESTO1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableUSPE_WU_VOUCHER.IMPUESTO1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IMPUESTO1\' in table \'USPE_WU_VOUCHER\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSPE_WU_VOUCHER.IMPUESTO1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsAGENCIANull() {
                 return this.IsNull(this.tableUSPE_WU_VOUCHER.AGENCIAColumn);
             }
@@ -1601,6 +1770,66 @@ namespace Bootstrap {
             public void SetEstadoRemesaNull() {
                 this[this.tableUSPE_WU_VOUCHER.EstadoRemesaColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEXCHANGE_RATE1Null() {
+                return this.IsNull(this.tableUSPE_WU_VOUCHER.EXCHANGE_RATE1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEXCHANGE_RATE1Null() {
+                this[this.tableUSPE_WU_VOUCHER.EXCHANGE_RATE1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCARGO_ENVIO1Null() {
+                return this.IsNull(this.tableUSPE_WU_VOUCHER.CARGO_ENVIO1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCARGO_ENVIO1Null() {
+                this[this.tableUSPE_WU_VOUCHER.CARGO_ENVIO1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCARGO_MENSAJE1Null() {
+                return this.IsNull(this.tableUSPE_WU_VOUCHER.CARGO_MENSAJE1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCARGO_MENSAJE1Null() {
+                this[this.tableUSPE_WU_VOUCHER.CARGO_MENSAJE1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCARGO_ENTREGA1Null() {
+                return this.IsNull(this.tableUSPE_WU_VOUCHER.CARGO_ENTREGA1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCARGO_ENTREGA1Null() {
+                this[this.tableUSPE_WU_VOUCHER.CARGO_ENTREGA1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsIMPUESTO1Null() {
+                return this.IsNull(this.tableUSPE_WU_VOUCHER.IMPUESTO1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetIMPUESTO1Null() {
+                this[this.tableUSPE_WU_VOUCHER.IMPUESTO1Column] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -1775,18 +2004,18 @@ namespace Bootstrap.DT_USPE_WU_VOUCHERTableAdapters {
             tableMapping.ColumnMappings.Add("DESTINO", "DESTINO");
             tableMapping.ColumnMappings.Add("ORIGEN", "ORIGEN");
             tableMapping.ColumnMappings.Add("PAY_AMOUNT", "PAY_AMOUNT");
-            tableMapping.ColumnMappings.Add("EXCHANGE_RATE", "EXCHANGE_RATE");
             tableMapping.ColumnMappings.Add("SOURCE_AMOUNT", "SOURCE_AMOUNT");
             tableMapping.ColumnMappings.Add("MONEDA_ORINGEN", "MONEDA_ORINGEN");
             tableMapping.ColumnMappings.Add("FECHA_ORIGEN", "FECHA_ORIGEN");
             tableMapping.ColumnMappings.Add("MTCN", "MTCN");
-            tableMapping.ColumnMappings.Add("CARGO_ENVIO", "CARGO_ENVIO");
-            tableMapping.ColumnMappings.Add("CARGO_MENSAJE", "CARGO_MENSAJE");
-            tableMapping.ColumnMappings.Add("CARGO_ENTREGA", "CARGO_ENTREGA");
-            tableMapping.ColumnMappings.Add("IMPUESTO", "IMPUESTO");
             tableMapping.ColumnMappings.Add("TOTAL", "TOTAL");
             tableMapping.ColumnMappings.Add("FIRMA", "FIRMA");
             tableMapping.ColumnMappings.Add("EstadoRemesa", "EstadoRemesa");
+            tableMapping.ColumnMappings.Add("EXCHANGE_RATE", "EXCHANGE_RATE1");
+            tableMapping.ColumnMappings.Add("CARGO_ENVIO", "CARGO_ENVIO1");
+            tableMapping.ColumnMappings.Add("CARGO_MENSAJE", "CARGO_MENSAJE1");
+            tableMapping.ColumnMappings.Add("CARGO_ENTREGA", "CARGO_ENTREGA1");
+            tableMapping.ColumnMappings.Add("IMPUESTO", "IMPUESTO1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1806,6 +2035,7 @@ namespace Bootstrap.DT_USPE_WU_VOUCHERTableAdapters {
             this._commandCollection[0].CommandText = "dbo.USPE_WU_VOUCHER";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mtcn", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fInicio", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fFin", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -1814,19 +2044,25 @@ namespace Bootstrap.DT_USPE_WU_VOUCHERTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DT_USPE_WU_VOUCHER.USPE_WU_VOUCHERDataTable dataTable, global::System.Nullable<global::System.DateTime> fInicio, global::System.Nullable<global::System.DateTime> fFin) {
+        public virtual int Fill(DT_USPE_WU_VOUCHER.USPE_WU_VOUCHERDataTable dataTable, string mtcn, global::System.Nullable<global::System.DateTime> fInicio, global::System.Nullable<global::System.DateTime> fFin) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((fInicio.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(fInicio.Value));
-            }
-            else {
+            if ((mtcn == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((fFin.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(fFin.Value));
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(mtcn));
+            }
+            if ((fInicio.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(fInicio.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((fFin.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(fFin.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1839,19 +2075,25 @@ namespace Bootstrap.DT_USPE_WU_VOUCHERTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DT_USPE_WU_VOUCHER.USPE_WU_VOUCHERDataTable GetData(global::System.Nullable<global::System.DateTime> fInicio, global::System.Nullable<global::System.DateTime> fFin) {
+        public virtual DT_USPE_WU_VOUCHER.USPE_WU_VOUCHERDataTable GetData(string mtcn, global::System.Nullable<global::System.DateTime> fInicio, global::System.Nullable<global::System.DateTime> fFin) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((fInicio.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(fInicio.Value));
-            }
-            else {
+            if ((mtcn == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((fFin.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(fFin.Value));
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(mtcn));
+            }
+            if ((fInicio.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(fInicio.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((fFin.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(fFin.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             DT_USPE_WU_VOUCHER.USPE_WU_VOUCHERDataTable dataTable = new DT_USPE_WU_VOUCHER.USPE_WU_VOUCHERDataTable();
             this.Adapter.Fill(dataTable);

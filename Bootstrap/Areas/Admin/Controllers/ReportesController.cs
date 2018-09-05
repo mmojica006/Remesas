@@ -15,5 +15,9 @@ namespace Bootstrap.Areas.Admin.Controllers
         {
             return View();
         }
+        public ActionResult Cliente()
+        {
+            return View();
+        }
     }
 }

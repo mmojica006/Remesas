@@ -22,30 +22,49 @@ namespace Bootstrap.Reports
 
             if (!IsPostBack)
             {
-                ImprimirOrden(id, tipo, fInicio, fFin);
+                switch (tipo)
+                {
+                    case 1:
+                        ImprimirOrden(id, tipo, "", fInicio, fFin);
+                        break;
+                    case 2:                   
+                        ImprimirOrden(id, tipo, fInicio,"", "");
+                        break;
+
+
+                }
+                 
             }
 
 
         }
 
-        private void ImprimirOrden(int id, byte tipo,string fechaInicio, string fechaFin)
+        private void ImprimirOrden(int id, byte tipo,string  mtcn, string fechaInicio, string fechaFin)
         {
             //string fechaInicio = "01/06/2018";
             //string fechaFin = "30/06/2018";
+     
 
                
 
 
-            ReportViewer1.LocalReport.DataSources.Clear();
-            ReportViewer1.LocalReport.DataSources.Add(
-                new ReportDataSource("DS_COMPLETA", _tbl_remesasDto.listadoRemesas( DateTime.Parse(fechaInicio), DateTime.Parse(fechaFin))));
+     
+
             switch (tipo)
             {
                 case 1:
+                    ReportViewer1.LocalReport.DataSources.Clear();
+                    ReportViewer1.LocalReport.DataSources.Add(
+                        new ReportDataSource("DS_COMPLETA", _tbl_remesasDto.listadoRemesas("", DateTime.Parse(fechaInicio), DateTime.Parse(fechaFin))));
+
                     ReportViewer1.LocalReport.ReportPath = "Reports/rpt_voucher_carta.rdlc";
                     break;
                 case 2:
-                    ReportViewer1.LocalReport.ReportPath = "Reports/rpt_orden_media_carta.rdlc";
+                    ReportViewer1.LocalReport.DataSources.Clear();
+                    ReportViewer1.LocalReport.DataSources.Add(
+                        new ReportDataSource("DS_COMPLETA", _tbl_remesasDto.listadoRemesas(mtcn)));
+
+                    ReportViewer1.LocalReport.ReportPath = "Reports/rpt_voucher_carta.rdlc";
                     break;
                 case 3:
                     ReportViewer1.LocalReport.ReportPath = "Reports/rpt_orden_pos.rdlc";

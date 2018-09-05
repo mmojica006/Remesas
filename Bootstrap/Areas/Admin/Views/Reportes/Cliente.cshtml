@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Voucher de un cliente";
+}
+
+<h2>Generar voucher de un cliente por MTCN</h2>
+
+
+
+
+
+<form id="frmReporte">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="mtcn">MTCN</label>
+            <input type="text" class="form-control " id="mtcn" placeholder="MTCN del cliente" required>
+        </div>
+   
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-primary" id="btnImprimir"> Imprimir</button>
+        </div>
+
+    </div>
+
+    
+</form>
+
+
+
+<script>
+
+
+
+
+
+    $(document).ready(function () {
+        $("#btnImprimir").click(function (event) {
+       
+
+            f1 = $('#mtcn').val();
+            f2 = '';
+        
+
+
+            if ((f1 != "") ){
+                window.open("../../Reports/frm_reporte.aspx?tipo=2&id=2&f1=" + f1 + "&f2=" + f2, "_blank");
+            } else {
+                $("#frmReporte").after('<div class="alert alert-warning alert-dismissible"> <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Favor completar todos los campos.</div>');
+                return false;
+            }
+
+
+        } );
+
+    });
+
+</script>
+

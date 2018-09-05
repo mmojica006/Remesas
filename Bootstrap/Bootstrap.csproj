@@ -194,6 +194,9 @@
     <Compile Include="Areas\Admin\Controllers\ReportesController.cs" />
     <Compile Include="Areas\Admin\Filters\AdminFilters.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="DT_USPE_WU_VOUCHER.cs">
+      <DependentUpon>DT_USPE_WU_VOUCHER.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DT_USPE_WU_VOUCHER.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -238,6 +241,7 @@
     <Content Include="DT_USPE_WU_VOUCHER.xsc">
       <DependentUpon>DT_USPE_WU_VOUCHER.xsd</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\Reportes\Cliente.cshtml" />
     <None Include="DT_USPE_WU_VOUCHER.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DT_USPE_WU_VOUCHER.Designer.cs</LastGenOutput>
