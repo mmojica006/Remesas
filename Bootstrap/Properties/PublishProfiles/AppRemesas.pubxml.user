@@ -163,13 +163,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/15/2018 12:06:49</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Remesas/Index.cshtml">
-      <publishTime>06/18/2018 14:56:50</publishTime>
+      <publishTime>08/13/2018 10:25:52</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Reportes/Cliente.cshtml">
+      <publishTime>09/04/2018 22:31:28</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Reportes/Index.cshtml">
-      <publishTime>06/11/2018 10:22:19</publishTime>
+      <publishTime>09/05/2018 09:20:21</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Shared/Layout.cshtml">
-      <publishTime>06/18/2018 13:32:37</publishTime>
+      <publishTime>09/04/2018 21:56:36</publishTime>
     </File>
     <File Include="Areas/Admin/Views/web.config">
       <publishTime>06/11/2018 09:16:56</publishTime>
@@ -208,16 +211,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/15/2018 13:49:37</publishTime>
     </File>
     <File Include="bin/Bootstrap.dll">
-      <publishTime>07/04/2018 11:20:59</publishTime>
+      <publishTime>09/05/2018 09:34:54</publishTime>
     </File>
     <File Include="bin/Bootstrap.pdb">
-      <publishTime>07/04/2018 11:20:59</publishTime>
+      <publishTime>09/05/2018 09:34:54</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>07/04/2018 11:20:55</publishTime>
+      <publishTime>09/05/2018 09:34:47</publishTime>
     </File>
     <File Include="bin/DAL.pdb">
-      <publishTime>07/04/2018 11:20:55</publishTime>
+      <publishTime>09/05/2018 09:34:47</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>09/11/2013 09:10:04</publishTime>
@@ -226,10 +229,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/11/2013 09:10:04</publishTime>
     </File>
     <File Include="bin/Helper.dll">
-      <publishTime>07/04/2018 11:20:54</publishTime>
+      <publishTime>09/05/2018 09:34:47</publishTime>
     </File>
     <File Include="bin/Helper.pdb">
-      <publishTime>07/04/2018 11:20:54</publishTime>
+      <publishTime>09/05/2018 09:34:47</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>06/27/2017 12:59:34</publishTime>
@@ -258,14 +261,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 02:06:24</publishTime>
     </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>10/04/2013 17:38:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <publishTime>10/04/2013 17:38:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>10/04/2013 17:38:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>05/15/2014 15:06:44</publishTime>
+    </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>04/23/2012 15:23:58</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>07/04/2018 11:20:55</publishTime>
+      <publishTime>09/05/2018 09:34:47</publishTime>
     </File>
     <File Include="bin/Model.pdb">
-      <publishTime>07/04/2018 11:20:55</publishTime>
+      <publishTime>09/05/2018 09:34:47</publishTime>
+    </File>
+    <File Include="bin/Reports/rpt_voucher_carta.rdlc">
+      <publishTime>09/04/2018 21:43:43</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/18/2015 20:19:46</publishTime>
@@ -324,17 +342,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.Webpages.Razor.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
+    <File Include="DT_USPE_WU_VOUCHER.xsc">
+      <publishTime>09/04/2018 21:40:38</publishTime>
+    </File>
+    <File Include="DT_USPE_WU_VOUCHER.xss">
+      <publishTime>09/04/2018 21:40:38</publishTime>
+    </File>
     <File Include="Global.asax">
       <publishTime>06/11/2018 08:27:42</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/15/2018 14:43:03</publishTime>
+      <publishTime>09/05/2018 08:49:22</publishTime>
+    </File>
+    <File Include="Reports/frm_reporte.aspx">
+      <publishTime>09/05/2018 08:57:43</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>06/11/2018 08:27:42</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/04/2018 11:21:32</publishTime>
+      <publishTime>09/05/2018 09:35:12</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace Bootstrap.Areas.Admin.Controllers
 {
-    //[Autenticado]
+    [Autenticado]
     public class RemesasController : Controller
     {
         private tbl_remesasDTO _remesas = new tbl_remesasDTO();
